@@ -31,7 +31,7 @@ public class Persona {
 
     public Persona(String nombre) {
     	this.cedula = 1; // anadimos un valor por defecto para cedula.
-        this.nombre = "";
+        this.nombre = nombre;
         totalPersonas++;
     }
     
