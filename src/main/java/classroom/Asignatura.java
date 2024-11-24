@@ -14,7 +14,7 @@ public class Asignatura {
     }
 
     public Asignatura(int codigoInterno,Tipo tipo) {
-        this("Sin nombre", codigoInterno, codigoInterno ,tipo); //Que el codigo interno haga también de codigo externo.
+        this("Sin nombre", codigoInterno, codigoInterno ,tipo); //Que el codigo interno haga tambien de codigo externo.
     }
 
     // Eliminamos metodo duplicado

@@ -9,7 +9,7 @@ public enum Tipo {
 		this.codigo = codigo;
 		this.nombre = nombre;
 	}
-	Tipo(int codigo){ // añadimos un constructor con solo codigo
+	Tipo(int codigo){ // anadimos un constructor con solo codigo
 		this.codigo = codigo;
 	}
 }
