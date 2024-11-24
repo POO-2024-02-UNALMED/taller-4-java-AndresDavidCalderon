@@ -36,7 +36,7 @@ public class Persona {
     }
     
     public Persona() { // anadimos el constructor vacio que necesita Taller 4.
-    	this.cedula = 1; // anadimos un valor por defecto para cedula.
+    	this.cedula = 0; // anadimos un valor por defecto para cedula.
     	this.nombre="";
     	totalPersonas++;
     }
