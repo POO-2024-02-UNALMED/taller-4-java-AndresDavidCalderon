@@ -11,5 +11,6 @@ public enum Tipo {
 	}
 	Tipo(int codigo){ // anadimos un constructor con solo codigo
 		this.codigo = codigo;
+		this.nombre = "";
 	}
 }
