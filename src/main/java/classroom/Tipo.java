@@ -5,8 +5,11 @@ public enum Tipo {
 	
 	private int codigo;
 	private String nombre;
-	public Tipo(int codigo,String nombre) {
+	Tipo(int codigo,String nombre) { // Los constructores de enum no pueden ser publicos.
 		this.codigo = codigo;
 		this.nombre = nombre;
+	}
+	Tipo(int codigo){ // añadimos un constructor con solo codigo
+		this.codigo = codigo;
 	}
 }

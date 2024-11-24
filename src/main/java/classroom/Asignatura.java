@@ -10,17 +10,15 @@ public class Asignatura {
 
     public Asignatura() {
         this("Sin nombre",Tipo.FUNDAMENTACION);
-        this(0);
+        // Eliminamos this inutil e invalido.
     }
 
     public Asignatura(int codigoInterno,Tipo tipo) {
-        this("Sin nombre", codigoInterno, 0,tipo);
+        this("Sin nombre", codigoInterno, codigoInterno ,tipo); //Que el codigo interno haga también de codigo externo.
     }
 
-    public Asignatura(int codigoExterno,Tipo tipo) {
-        this("Sin nombre", 0, codigoExterno,tipo);
-    }
-
+    // Eliminamos metodo duplicado
+    
     public Asignatura(String nombre, Tipo tipo) {
         this(nombre, 0, 0,tipo);
     }
@@ -41,12 +39,11 @@ public class Asignatura {
 
     public void cambiarDatos(int codigoInterno) {
         this.codigoInterno = codigoInterno;
+        this.codigoExterno = codigoInterno; // Que el codigo externo sea el mismo interno, como Taller4 lo espera.
     }
 
-    public void cambiarDatos(int codigoExterno) {
-        this.codigoExterno = codigoExterno;
-    }
-
+    // Eliminamos metodo duplicado
+    
     public void cambiarDatos(String nombre) {
         this.nombre = nombre;
     }

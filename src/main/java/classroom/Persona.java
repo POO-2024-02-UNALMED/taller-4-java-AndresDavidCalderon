@@ -8,7 +8,7 @@ public class Persona {
     
     static {
         totalPersonas = 0;
-        cedula = 3;
+        // Eliminamos la asignación atomatica de cedula.
     }
 
     public Persona(long cedula, String nombre) {
@@ -30,8 +30,15 @@ public class Persona {
     }
 
     public Persona(String nombre) {
+    	this.cedula = 1; // Añadimos un valor por defecto para cedula.
         this.nombre = "";
         totalPersonas++;
+    }
+    
+    public Persona() { // Añadimos el constructor vacio que necesita Taller 4.
+    	this.cedula = 1; // Añadimos un valor por defecto para cedula.
+    	this.nombre="";
+    	totalPersonas++;
     }
     
     public long getCedula() {
