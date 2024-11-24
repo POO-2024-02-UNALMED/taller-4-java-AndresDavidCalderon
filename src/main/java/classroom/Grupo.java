@@ -18,7 +18,7 @@ public class Grupo {
 
     public Grupo(int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         this(new Persona[cantidadEstudiantes] , profesor, asignatura, codigo, horario); // El this() debe ser la primera linea, y se necesita una lista de personas nueva.
-        // Eliminamos la variable personas interna.
+        Persona[] personas = new Persona[2];// Eliminamos la variable personas interna.
     }
 
     public Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura) {
